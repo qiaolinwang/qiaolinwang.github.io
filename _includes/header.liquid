@@ -2,28 +2,25 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
+      <div class="d-flex align-items-center navbar-brand-wrapper">
+        <div class="navbar-brand social d-flex align-items-center mb-0" style="font-size: 2rem; gap: 0.5rem;">
+          {% if site.data.socials.scholar_userid %}
+            <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" title="Google Scholar" target="_blank">
+              <i class="ai ai-google-scholar"></i>
+            </a>
           {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
-      {% endif %}
+          {% if site.data.socials.github_username %}
+            <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          {% endif %}
+          {% if site.data.socials.linkedin_username %}
+            <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" title="LinkedIn" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          {% endif %}
+        </div>
+      </div>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"

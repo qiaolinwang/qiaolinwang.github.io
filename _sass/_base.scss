@@ -37,10 +37,10 @@ table {
 
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: #333333;
 
   &:hover {
-    color: var(--global-theme-color);
+    color: #333333;
     text-decoration: underline;
   }
 
@@ -778,6 +778,18 @@ footer.sticky-bottom {
 
         > em {
           border-bottom: 1px solid;
+          font-style: normal;
+
+          strong {
+            border-bottom: none;
+          }
+        }
+
+        > em:has(strong) {
+          border-bottom: none;
+        }
+
+        > strong {
           font-style: normal;
         }
 

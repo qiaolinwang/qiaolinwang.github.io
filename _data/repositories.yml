@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - qiaolinwang
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - qiaolinwang/ChatVITS_Cyberpunk2077
+  - qiaolinwang/Audio-Signal-Processing-for-Machine-Learning
+  - qiaolinwang/TTS_Papers_Notes
+  - qiaolinwang/ELEN6885_Final_Project

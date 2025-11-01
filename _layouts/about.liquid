@@ -20,17 +20,53 @@ layout: default
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle profile-img-hover' %}
           {% else %}
             {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+      rounded profile-img-hover' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+          <style>
+            .profile-pic-container {
+              position: relative;
+              width: 100%;
+              display: block;
+            }
+            .profile-pic-container img {
+              width: 100%;
+              height: auto;
+              display: block;
+              max-width: 100%;
+            }
+            .profile-pic-front {
+              position: relative;
+              z-index: 2;
+              transition: opacity 0.5s ease-in-out;
+            }
+            .profile-pic-back {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              width: 100%;
+            }
+            .profile-pic-container:hover .profile-pic-front {
+              opacity: 0;
+            }
+          </style>
+          <div class="profile-pic-container">
+            <img
+              src="{{ profile_image_path | relative_url }}"
+              class="{{ profile_image_class }} profile-pic-front"
+              alt="{{ page.profile.image }}"
+            >
+            <img
+              src="{{ 'assets/img/prof_pic2.jpg' | relative_url }}"
+              class="{{ profile_image_class }} profile-pic-back"
+              alt="Profile picture 2"
+            >
+          </div>
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
@@ -38,12 +74,14 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    {{ content }}
+
+    <div class="clearfix"></div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -51,7 +89,7 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -59,7 +97,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
