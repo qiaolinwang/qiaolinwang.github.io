@@ -5,42 +5,33 @@
       value: Qiaolin Wang
     - name: Email
       value: <a href="mailto:qw2443@columbia.edu">qw2443@columbia.edu</a>
+    - name: Phone
+      value: (646) 528-0549
     - name: Location
-      value: New York, USA
-    - name: Research Interests
-      value: Speech LLMs, multimodal fusion, emotion recognition, human-centered audio AI
+      value: New York, NY
 
 - title: Education
   type: time_table
   contents:
-    - title: M.S. Electrical Engineering
+    - title: M.S. in Electrical Engineering
       institution: Columbia University, New York, NY
-      year: 2024 - Present
+      year: 2024 - 2025
       description:
-        - Coursework in speech processing, machine learning theory, and multimodal systems.
-        - Research on audio-language modeling and cross-modal reasoning.
-    - title: B.Eng. Computer Science and Engineering
+        - "Concentration: Speech and Language Processing"
+        - "Advisor: <a href='https://www.engineering.columbia.edu/faculty-staff/directory/nima-mesgarani' target='_blank'>Prof. Nima Mesgarani</a>"
+    - title: B.Eng. in Computer Science
       institution: Wuhan University, Wuhan, China
       year: 2020 - 2024
       description:
-        - Built speech-driven applications and intelligent user experiences.
-        - Led collaborative student teams focused on audio AI and interactive media.
+        - "Core Course: Computer Systems, Artificial Intelligence, Intelligent Speech Processing"
 
-- title: Research Experience
-  type: time_table
+- title: Research Interests
+  type: map
   contents:
-    - title: Graduate Researcher, Speech & Multimodal Intelligence
-      institution: Columbia University
-      year: 2024 - Present
-      description:
-        - Co-developing SightSound-R1, distilling reasoning from vision-language foundation models into audio-language agents.
-        - Layer-wise probing of self-supervised speech representations to uncover grammatical and conceptual hierarchies.
-    - title: Student Researcher, Wuhan University
-      institution: Wuhan University, Wuhan, China
-      year: 2022 - 2024
-      description:
-        - Prototyped emotion-aware dialogue systems with interdisciplinary student teams.
-        - Curated open-source toolkits to streamline speech model experimentation and evaluation.
+    - name: Focus
+      value: I enjoy studying models that can Perceive, Reason, and Speak like humans
+    - name: Areas
+      value: Multimodal Large Language Models (MLLMs), Audio-Visual Understanding, Speech Synthesis
 
 - title: Publications
   type: time_table
@@ -48,35 +39,94 @@
     - title: Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations
       year: 2025
       description:
-        - EMNLP 2025 Oral. With Lucy He, Xuan Jiang, and Nima Mesgarani.
+        - Linyang He*, <strong>Qiaolin Wang*</strong>, Xilin Jiang, and Nima Mesgarani
+        - <em>EMNLP 2025 Oral</em>
+        - <a href="https://aclanthology.org/2025.emnlp-main.1790.pdf" target="_blank">PDF</a>
     - title: "SightSound-R1: Cross-Modal Reasoning Distillation from Vision to Audio Language Models"
       year: 2025
       description:
-        - arXiv preprint 2509.15661. With Xuan Jiang, Lucy He, Jiatong Wu, and Nima Mesgarani.
+        - <strong>Qiaolin Wang</strong>, Xilin Jiang, Linyang He, Junkai Wu, and Nima Mesgarani
+        - <em>Submitted to ICASSP 2026</em>
+        - <a href="https://arxiv.org/abs/2509.15661" target="_blank">arXiv</a>
 
-- title: Selected Projects
+- title: Research Experience
   type: time_table
   contents:
-    - title: ChatVITS_Cyberpunk2077
-      year: 2023
+    - title: Research Assistant
+      institution: Columbia University, New York, NY
+      year: Oct 2025 - Present
       description:
-        - Combined GPT-based dialogue planning with VITS voice cloning to create responsive Cyberpunk 2077 character performances.
-        - Open-sourced training scripts, dataset handling, and inference demos for creative voice synthesis.
-    - title: Audio Signal Processing Toolkit
-      year: 2022
+        - "<strong>AVMeme Exam: A Multimodal Multilingual Multicultural Benchmark for LLMs' Multimedia Knowledge and Thinking Beyond Text</strong>"
+        - Built a large-scale audio-visual meme benchmark to test MLLMs' multimodal and cultural understanding
+        - Spearheaded evaluation of 15 models (Audio, Video, Omni, and commercial LLMs) with fine-grained QA categorization across 1000 memes in multiple languages and cultures
+        - Aiming for public release and preprint submission by Dec 2025
+    - title: Research Assistant
+      institution: Columbia University, New York, NY
+      year: Jun 2025 - Sept 2025
       description:
-        - Authored a hands-on repository covering feature engineering, PyTorch training loops, and visualization utilities for speech ML.
-        - Shared as support material for audio signal processing courses and study groups.
-    - title: Reinforcement Learning-based Stock Trading Agent
-      year: 2021
+        - "<strong>SightSound-R1: Cross-Modal Reasoning Distillation from Vision to Audio Language Models</strong>"
+        - Proposed SightSound-R1, a novel framework to distill reasoning from Vision to Audio LLMs
+        - Engineered an audio-focused Chain of Thought (CoT) generation prompt for Qwen2.5-VL-32B with test-time scaling and used a GPT-4o fact-checker to filter visual hallucinations
+        - Implemented a two-stage training strategy (SFT + GRPO) to distill the verified CoT into Qwen2-Audio-7B
+        - Improved the LALM's reasoning on unseen datasets, outperforming baselines and achieving 66.1% on MMAU-Test-Mini (Sound) and 59.5% on MUSIC-AVQA
+    - title: Research Assistant
+      institution: Columbia University, New York, NY
+      year: Feb 2025 - May 2025
       description:
-        - Explored DQN, DDPG, and A2C baselines for algorithmic trading in the ELEN6885 Advanced Machine Learning course.
-        - Implemented custom reward shaping and evaluation dashboards for risk-aware deployment.
+        - "<strong>Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations</strong>"
+        - Conducted speech minimal-pair probing with 116k pairs from BLiMP/COMPS across 71 linguistic tasks
+        - Probed 16 models (S3M, ASR, AudioLLM, Codec) with layer-wise linear classifiers on frozen representations
+        - "Observed syntax > morphology > concepts: Speech models capture form more strongly than meaning"
+        - Found mean pooling outperformed single-token extraction, yielding more stable speech representations
+        - "Exposed temporal asymmetry: grammatical evidence in S3M/S2T-ASR peaks 500-600ms pre-onset, whereas in AudioLLMs and Whisper it accumulates through onset and beyond"
+    - title: Research Assistant
+      institution: Wuhan University, Wuhan, China
+      year: Jan 2023 - Mar 2023
+      description:
+        - "<strong>Snoring Sound Dataset Annotation</strong>"
+        - Analyzed Polysomnography (PSG) data from 40 patients to identify respiratory events and sleep stages
+        - Synchronized clinical PSG signals with ≈170 hours of audio using PSG4/Sleepware and Audition
+        - Labeled snores relative to respiratory events and cross-referencing sleep stages, categorizing snores based on their temporal relation to events
+        - Contributed to the foundational dataset published at <em>Interspeech 2023</em> (<a href="https://www.isca-archive.org/interspeech_2023/xiao23b_interspeech.pdf" target="_blank">PDF</a>)
 
-- title: Skills
+- title: Work Experience
+  type: time_table
+  contents:
+    - title: Research Engineer Intern
+      institution: Wiz.AI, Singapore
+      year: Mar 2024 - Aug 2024
+      description:
+        - Developed a multi-task Speech Large Language Model to understand both content and emotion
+        - Engineered a prompt strategy that integrates dialogue history to enhance Chain of Thought reasoning
+        - Utilized a window-level query mechanism to capture fine-grained emotional features from raw speech
+        - Finetuned a cross-modal alignment module between speech (Q-former) and text (Vicuna LLM)
+        - Implemented a contrastive-learning loss on emotion embedding, achieving SOTA 74.48% on IEMOCAP and 62.61% on MELD for SER
+    - title: Machine Learning Engineer Intern
+      institution: Wiz.AI, Singapore
+      year: July 2023 - Dec 2023
+      description:
+        - Spearheaded a systematic evaluation of voice cloning models and automated the deployment pipeline
+        - Benchmarked open and closed-source voice-cloning solutions on speech quality and naturalness
+        - Fine-tuned a StyleTTS2-based voice cloning model on LibriSpeech and proprietary dataset
+        - Built a speaker verification framework with WeSpeaker, PyAnnote, and SpeechBrain for evaluation
+        - Achieved competitive speaker similarity (≈0.84) to the commercial model using only 245 hours of data (1/40 of the original dataset)
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: Speech Synthesis Implementation on Game Avatars
+      year: Jun 2022 - Sept 2022
+      institution: Wuhan University, Wuhan, China
+      description:
+        - Developed a high-fidelity, Text-to-Speech (TTS) model for the character "Paimon" from Genshin Impact
+        - Engineered a pipeline using ECAPA-TDNN for speaker classification and Whisper for transcription
+        - Built and annotated a multi-speaker dataset of ≈48000 clips (15 hrs.) from 50 Genshin Impact characters
+        - Finetuned a VITS-based speech synthesis model using a curated set of "Paimon" audio clips
+        - Launched the project as a technical demo on Bilibili, attracting over 600,000 views and deploying the model on Google Colab for public inference
+        - <a href="https://colab.research.google.com/drive/1HDV84t3N-yUEBXN8dDIDSv6CzEJykCLw#scrollTo=oiPvCIJ_MHot" target="_blank">Colab</a> | <a href="https://www.bilibili.com/video/BV16G4y1B7Ey/" target="_blank">Bilibili</a>
+
+- title: Technologies
   type: list
   contents:
-    - Machine Learning: PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers
-    - Audio & Speech: torchaudio, ESPnet, speech representation learning, TTS pipelines
-    - Languages: English, Mandarin Chinese
-    - Creative: Hip-hop music production, sound design, live performance
+    - "<strong>Languages:</strong> Python, Java, C, C++"
+    - "<strong>Tools:</strong> Linux, Git, PyTorch"
