@@ -14,7 +14,7 @@
   type: map
   contents:
     - name: Focus
-      value: I enjoy studying models that can Perceive, Reason, and Speak like humans
+      value: I enjoy studying models that can <strong>Perceive, Reason, and Speak</strong> like humans
     - name: Areas
       value: Multimodal Large Language Models (MLLMs), Audio-Visual Understanding, Speech Synthesis
       
