@@ -52,14 +52,14 @@
 - title: Research Experience
   type: time_table
   contents:
-    - title: AVMeme Exam: A Multimodal Multilingual Multicultural Benchmark for LLMs' Multimedia Knowledge and Thinking Beyond Text
+    - title: "AVMeme Exam: A Multimodal Multilingual Multicultural Benchmark for LLMs' Multimedia Knowledge and Thinking Beyond Text"
       institution: Columbia University, New York, NY
       year: 2025
       description:
         - Built a large-scale audio-visual meme benchmark to test MLLMs' multimodal and cultural understanding
         - Spearheaded evaluation of 15 models (Audio, Video, Omni, and commercial LLMs) with fine-grained QA categorization across 1000 memes in multiple languages and cultures
         - Aiming for public release and preprint submission by Dec 2025
-    - title: SightSound-R1: Cross-Modal Reasoning Distillation from Vision to Audio Language Models
+    - title: "SightSound-R1: Cross-Modal Reasoning Distillation from Vision to Audio Language Models"
       institution: Columbia University, New York, NY
       year: 2025
       description:
