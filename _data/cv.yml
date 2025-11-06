@@ -10,6 +10,14 @@
     - name: Location
       value: New York, NY
 
+- title: Research Interests
+  type: map
+  contents:
+    - name: Focus
+      value: I enjoy studying models that can Perceive, Reason, and Speak like humans
+    - name: Areas
+      value: Multimodal Large Language Models (MLLMs), Audio-Visual Understanding, Speech Synthesis
+      
 - title: Education
   type: time_table
   contents:
@@ -24,14 +32,6 @@
       year: 2020 - 2024
       description:
         - "Core Course: Computer Systems, Artificial Intelligence, Intelligent Speech Processing"
-
-- title: Research Interests
-  type: map
-  contents:
-    - name: Focus
-      value: I enjoy studying models that can Perceive, Reason, and Speak like humans
-    - name: Areas
-      value: Multimodal Large Language Models (MLLMs), Audio-Visual Understanding, Speech Synthesis
 
 - title: Publications
   type: time_table
