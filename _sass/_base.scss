@@ -777,7 +777,7 @@ footer.sticky-bottom {
         }
 
         > em {
-          border-bottom: 1px solid;
+          border-bottom: 1px solid var(--global-text-color);
           font-style: normal;
 
           strong {

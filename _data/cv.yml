@@ -52,38 +52,34 @@
 - title: Research Experience
   type: time_table
   contents:
-    - title: Research Assistant
+    - title: AVMeme Exam: A Multimodal Multilingual Multicultural Benchmark for LLMs' Multimedia Knowledge and Thinking Beyond Text
       institution: Columbia University, New York, NY
-      year: Oct 2025 - Present
+      year: 2025
       description:
-        - "<strong>AVMeme Exam: A Multimodal Multilingual Multicultural Benchmark for LLMs' Multimedia Knowledge and Thinking Beyond Text</strong>"
         - Built a large-scale audio-visual meme benchmark to test MLLMs' multimodal and cultural understanding
         - Spearheaded evaluation of 15 models (Audio, Video, Omni, and commercial LLMs) with fine-grained QA categorization across 1000 memes in multiple languages and cultures
         - Aiming for public release and preprint submission by Dec 2025
-    - title: Research Assistant
+    - title: SightSound-R1: Cross-Modal Reasoning Distillation from Vision to Audio Language Models
       institution: Columbia University, New York, NY
-      year: Jun 2025 - Sept 2025
+      year: 2025
       description:
-        - "<strong>SightSound-R1: Cross-Modal Reasoning Distillation from Vision to Audio Language Models</strong>"
         - Proposed SightSound-R1, a novel framework to distill reasoning from Vision to Audio LLMs
         - Engineered an audio-focused Chain of Thought (CoT) generation prompt for Qwen2.5-VL-32B with test-time scaling and used a GPT-4o fact-checker to filter visual hallucinations
         - Implemented a two-stage training strategy (SFT + GRPO) to distill the verified CoT into Qwen2-Audio-7B
         - Improved the LALM's reasoning on unseen datasets, outperforming baselines and achieving 66.1% on MMAU-Test-Mini (Sound) and 59.5% on MUSIC-AVQA
-    - title: Research Assistant
+    - title: Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations
       institution: Columbia University, New York, NY
-      year: Feb 2025 - May 2025
+      year: 2025
       description:
-        - "<strong>Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations</strong>"
         - Conducted speech minimal-pair probing with 116k pairs from BLiMP/COMPS across 71 linguistic tasks
         - Probed 16 models (S3M, ASR, AudioLLM, Codec) with layer-wise linear classifiers on frozen representations
         - "Observed syntax > morphology > concepts: Speech models capture form more strongly than meaning"
         - Found mean pooling outperformed single-token extraction, yielding more stable speech representations
         - "Exposed temporal asymmetry: grammatical evidence in S3M/S2T-ASR peaks 500-600ms pre-onset, whereas in AudioLLMs and Whisper it accumulates through onset and beyond"
-    - title: Research Assistant
+    - title: Snoring Sound Dataset Annotation
       institution: Wuhan University, Wuhan, China
-      year: Jan 2023 - Mar 2023
+      year: 2023
       description:
-        - "<strong>Snoring Sound Dataset Annotation</strong>"
         - Analyzed Polysomnography (PSG) data from 40 patients to identify respiratory events and sleep stages
         - Synchronized clinical PSG signals with ≈170 hours of audio using PSG4/Sleepware and Audition
         - Labeled snores relative to respiratory events and cross-referencing sleep stages, categorizing snores based on their temporal relation to events
@@ -94,7 +90,7 @@
   contents:
     - title: Research Engineer Intern
       institution: Wiz.AI, Singapore
-      year: Mar 2024 - Aug 2024
+      year: 2024
       description:
         - Developed a multi-task Speech Large Language Model to understand both content and emotion
         - Engineered a prompt strategy that integrates dialogue history to enhance Chain of Thought reasoning
@@ -103,7 +99,7 @@
         - Implemented a contrastive-learning loss on emotion embedding, achieving SOTA 74.48% on IEMOCAP and 62.61% on MELD for SER
     - title: Machine Learning Engineer Intern
       institution: Wiz.AI, Singapore
-      year: July 2023 - Dec 2023
+      year: 2023
       description:
         - Spearheaded a systematic evaluation of voice cloning models and automated the deployment pipeline
         - Benchmarked open and closed-source voice-cloning solutions on speech quality and naturalness
@@ -115,7 +111,7 @@
   type: time_table
   contents:
     - title: Speech Synthesis Implementation on Game Avatars
-      year: Jun 2022 - Sept 2022
+      year: 2022
       institution: Wuhan University, Wuhan, China
       description:
         - Developed a high-fidelity, Text-to-Speech (TTS) model for the character "Paimon" from Genshin Impact
