@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Selected research and creative work.
-nav: true
+nav: false
 nav_order: 3
 display_categories: [Research, Open Source]
 horizontal: false
