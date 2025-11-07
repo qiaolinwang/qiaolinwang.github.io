@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: qw2443@columbia.edu | <a href="https://www.ee.columbia.edu/" target="_blank">Columbia EE</a>
+subtitle: qw2443@columbia.edu | <a href="https://www.ee.columbia.edu/" target="_blank">Columbia EE</a> | <a href="https://qiaolinwang.github.io/assets/pdf/Qiaolin_Wang_CV.pdf" target="_blank">CV</a>
 
 profile:
   align: right
