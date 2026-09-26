@@ -23,7 +23,7 @@
   contents:
     - title: M.S. in Electrical Engineering
       institution: Columbia University, New York, NY
-      year: 2024 - 2025
+      year: 2024 - 2026
       description:
         - "Concentration: Speech and Language Processing"
         - "Advisor: <a href='https://www.engineering.columbia.edu/faculty-staff/directory/nima-mesgarani' target='_blank'>Prof. Nima Mesgarani</a>"
@@ -36,29 +36,35 @@
 - title: Publications
   type: time_table
   contents:
+    - title: "AVMeme Exam: A Multimodal Multilingual Multicultural Benchmark for LLMs' Contextual and Cultural Knowledge and Thinking"
+      year: 2026
+      description:
+        - Xilin Jiang, <strong>Qiaolin Wang</strong>, Junkai Wu, et al., and Nima Mesgarani
+        - <em>COLM 2026</em>
+        - <a href="https://arxiv.org/abs/2601.17645" target="_blank">arXiv</a> | <a href="https://avmemeexam.github.io/public" target="_blank">Website</a>
+    - title: "SightSound-R1: Cross-Modal Reasoning Distillation from Vision to Audio Language Models"
+      year: 2026
+      description:
+        - <strong>Qiaolin Wang</strong>, Xilin Jiang, Linyang He, Junkai Wu, and Nima Mesgarani
+        - <em>ICASSP 2026</em>
+        - <a href="https://ieeexplore.ieee.org/document/11463295/" target="_blank">IEEE</a> | <a href="https://arxiv.org/abs/2509.15661" target="_blank">arXiv</a>
     - title: Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations
       year: 2025
       description:
         - Linyang He*, <strong>Qiaolin Wang*</strong>, Xilin Jiang, and Nima Mesgarani
         - <em>EMNLP 2025 SAC Highlight</em>
         - <a href="https://aclanthology.org/2025.emnlp-main.1790.pdf" target="_blank">PDF</a>
-    - title: "SightSound-R1: Cross-Modal Reasoning Distillation from Vision to Audio Language Models"
-      year: 2025
-      description:
-        - <strong>Qiaolin Wang</strong>, Xilin Jiang, Linyang He, Junkai Wu, and Nima Mesgarani
-        - <em>Submitted to ICASSP 2026</em>
-        - <a href="https://arxiv.org/abs/2509.15661" target="_blank">arXiv</a>
 
 - title: Research Experience
   type: time_table
   contents:
-    - title: "AVMeme Exam: A Multimodal Multilingual Multicultural Benchmark for LLMs' Multimedia Knowledge and Thinking Beyond Text"
+    - title: "AVMeme Exam: A Multimodal Multilingual Multicultural Benchmark for LLMs' Contextual and Cultural Knowledge and Thinking"
       institution: Columbia University, New York, NY
       year: 2025
       description:
         - Built a large-scale audio-visual meme benchmark to test MLLMs' multimodal and cultural understanding
         - Spearheaded evaluation of 15 models (Audio, Video, Omni, and commercial LLMs) with fine-grained QA categorization across 1000 memes in multiple languages and cultures
-        - Aiming for public release and preprint submission by Dec 2025
+        - Released on <a href="https://arxiv.org/abs/2601.17645" target="_blank">arXiv</a> (Jan 2026); accepted to <em>COLM 2026</em>
     - title: "SightSound-R1: Cross-Modal Reasoning Distillation from Vision to Audio Language Models"
       institution: Columbia University, New York, NY
       year: 2025
@@ -88,6 +94,12 @@
 - title: Work Experience
   type: time_table
   contents:
+    - title: Researcher
+      institution: Bland, San Francisco Bay Area
+      year: 2026 - Present
+      description:
+        - Expressive ASR, TTS, and post-training for voice models
+        - Speech-to-speech systems
     - title: Research Engineer Intern
       institution: Wiz.AI, Singapore
       year: 2024
