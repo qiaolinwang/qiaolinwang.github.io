@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: qw2443@columbia.edu | <a href="https://www.ee.columbia.edu/" target="_blank">Columbia EE</a> | <a href="https://qiaolinwang.github.io/assets/pdf/Qiaolin_Wang_CV.pdf" target="_blank">CV</a>
+subtitle: Researcher at <a href="https://bland.ai" target="_blank">Bland</a> | qw2443@columbia.edu | <a href="https://qiaolinwang.github.io/assets/pdf/Qiaolin_Wang_CV.pdf" target="_blank">CV</a>
 
 profile:
   align: right
@@ -23,8 +23,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Qiaolin Wang, a second-year Master's student in Electrical Engineering at Columbia University, advised by <a href="https://nima.ee.columbia.edu/" target="_blank">Professor Nima Mesgarani</a>.
+I am Qiaolin Wang, a researcher at <a href="https://bland.ai" target="_blank">Bland</a>, where I work on expressive ASR, TTS, post-training, and speech-to-speech systems. I received my M.S. in Electrical Engineering from Columbia University, advised by <a href="https://nima.ee.columbia.edu/" target="_blank">Professor Nima Mesgarani</a>.
 
-I am passionate about building models that can <strong>Preceive, Reason, and Speak</strong> as naturally as humans do. My current research investigates the fundamental capabilities of <strong>Large Audio Language Models (LALMs)</strong>, from their <a href="https://aclanthology.org/2025.emnlp-main.1790/" target="_blank">internal representations about syntax and context</a>, to their capacity for <a href="https://arxiv.org/abs/2509.15661" target="_blank">complex reasoning across modalities</a>. My future work aims to advance this by pioneering <strong>Audio-Visual Understanding</strong> and unified models for <strong>Reasoning and Generation</strong>.
+I am passionate about building models that can <strong>Perceive, Reason, and Speak</strong> as naturally as humans do. My research has examined the fundamental capabilities of <strong>Large Audio Language Models (LALMs)</strong>: their <a href="https://aclanthology.org/2025.emnlp-main.1790/" target="_blank">internal representations of syntax and context</a> (EMNLP 2025, SAC Highlight), their capacity for <a href="https://arxiv.org/abs/2509.15661" target="_blank">cross-modal reasoning</a> (ICASSP 2026), and their <a href="https://arxiv.org/abs/2601.17645" target="_blank">contextual and cultural understanding of audio-visual media</a> (COLM 2026).
 
-Before joining Columbia, I earned my B.Eng. in Computer Science from Wuhan University. I also had an enriching experience as a Research Intern at <a href="https://www.wiz.ai/" target="_blank">Wiz.AI</a>, where I developed a SOTA Speech Emotion Recognition LLM.
+Before Columbia, I earned my B.Eng. in Computer Science from Wuhan University and was a research intern at <a href="https://www.wiz.ai/" target="_blank">Wiz.AI</a>, where I built a state-of-the-art speech emotion recognition LLM.
