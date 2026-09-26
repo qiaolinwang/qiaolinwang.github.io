@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Researcher at <a href="https://bland.ai" target="_blank">Bland</a> | qw2443@columbia.edu | <a href="https://qiaolinwang.github.io/assets/pdf/Qiaolin_Wang_CV.pdf" target="_blank">CV</a>
+subtitle: <strong>Building audio general intelligence</strong><br>Researcher at <a href="https://bland.ai" target="_blank">Bland</a> | qw2443@columbia.edu | <a href="https://qiaolinwang.github.io/assets/pdf/Qiaolin_Wang_CV.pdf" target="_blank">CV</a>
 
 profile:
   align: right
@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
+journey: true # stars in 3D + the Paimon video, after selected papers
 social: true # includes social icons at the bottom of the page
 
 announcements:
