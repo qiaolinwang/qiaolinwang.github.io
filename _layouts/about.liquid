@@ -102,6 +102,11 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Stars in 3D + where it started -->
+    {% if page.journey %}
+      {% include journey.liquid %}
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">
