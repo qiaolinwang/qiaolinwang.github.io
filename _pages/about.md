@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:600;font-size:2.2rem;line-height:1.25;display:inline-block;margin-bottom:.2rem;letter-spacing:.01em;color:var(--global-theme-color)">Building audio general intelligence</span><br>Researcher at <a href="https://bland.ai" target="_blank">Bland</a> | qw2443@columbia.edu | <a href="https://qiaolinwang.github.io/assets/pdf/Qiaolin_Wang_CV.pdf" target="_blank">CV</a>
+subtitle: <span style="font-family:'Allura',cursive;font-size:1.45rem;line-height:1.3;display:inline-block;margin-bottom:.1rem;color:var(--global-text-color)">Building Audio General Intelligence</span><br>Researcher at <a href="https://bland.ai" target="_blank">Bland</a> | qw2443@columbia.edu | <a href="https://qiaolinwang.github.io/assets/pdf/Qiaolin_Wang_CV.pdf" target="_blank">CV</a>
 
 profile:
   align: right
