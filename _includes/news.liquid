@@ -40,11 +40,14 @@
             if (rows.length <= n) return;
             const last = rows[n - 1];
             const h = last.offsetTop + last.offsetHeight + parseFloat(getComputedStyle(table).marginBottom);
-            box.style.maxHeight = `min(60vw, ${h}px)`;
+            box.style.maxHeight = `${Math.min(0.6 * window.innerWidth, h)}px`;
           }
+          // theme.js animates every property for a moment on load; keep the cap from animating in.
+          box.style.setProperty("transition", "none", "important");
           fit();
+          window.addEventListener("load", fit);
           window.addEventListener("resize", fit);
-          if (document.fonts) document.fonts.ready.then(fit);
+          new ResizeObserver(fit).observe(table);
         })();
       </script>
     {% endif %}
