@@ -2,11 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <span style="font-family:'Allura',cursive;font-size:1.45rem;line-height:1.3;display:inline-block;margin-bottom:.1rem;color:var(--global-text-color)">Building Audio General Intelligence</span><br>Researcher at <a href="https://bland.ai" target="_blank">Bland</a> | qw2443@columbia.edu | <a href="https://qiaolinwang.github.io/assets/pdf/Qiaolin_Wang_CV.pdf" target="_blank">CV</a>
+subtitle: <span style="font-family:'Allura',cursive;font-size:1.45rem;line-height:1.3;display:inline-block;margin-bottom:.1rem;color:var(--global-text-color)">Building Audio General Intelligence</span><canvas class="motto-wave" aria-hidden="true" style="display:inline-block;vertical-align:middle;width:0;height:0"></canvas><br>Researcher at <a href="https://bland.ai" target="_blank">Bland</a> | qw2443@columbia.edu | <a href="https://qiaolinwang.github.io/assets/pdf/Qiaolin_Wang_CV.pdf" target="_blank">CV</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_storm_a.jpg # first frame of the transition clip
+  image_hover: prof_storm_b.jpg # last frame; shown alone when the visitor prefers reduced motion
+  transition: profile_storm.mp4 # shatter, hold, shatter back; plays on hover
   image_circular: false # crops the image to make it circular
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
