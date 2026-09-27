@@ -9,7 +9,11 @@ category: Open Source
 
 My speech AI journey began as a side quest in the summer of 2022: teaching a model to speak as Paimon from _Genshin Impact_.
 
-{% include video.liquid path="assets/video/paimon-voice-clone.mp4" class="img-fluid rounded z-depth-1" controls=true poster="/assets/img/paimon_poster.jpg" %}
+{% include video.liquid path="assets/video/paimon-voice-clone.mp4" class="img-fluid rounded z-depth-1" controls=true cache_bust=true poster="/assets/img/paimon_poster.jpg" %}
+<script>
+  // Start the volume bar at 50%.
+  document.querySelectorAll('video[src*="paimon-voice-clone"]').forEach((v) => (v.volume = 0.5));
+</script>
 
 <div class="caption">
     I Used AI to Clone Paimon's Voice (September 2022), 616K views on Bilibili.
