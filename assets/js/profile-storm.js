@@ -1,6 +1,6 @@
 // Profile photo storm. While idle, sequin shards and small lightning arcs leak out of the
 // photo frame. Every visit plays the shatter clip once on its own after the photo has been
-// on screen for 5 s; after that, hovering (or clicking/tapping) plays it. The clip holds on
+// on screen for 3 s; after that, hovering (or clicking/tapping) plays it. The clip holds on
 // the second photo and then shatters back to the first.
 (function () {
   const root = document.querySelector(".storm-figure");
@@ -13,7 +13,7 @@
   // The clip is forward shatter + hold + the same shatter reversed (24 fps source).
   const FORWARD = 91 / 24;
   const HOLD = 5; // baked into the clip
-  const AUTOPLAY_DELAY = 5000;
+  const AUTOPLAY_DELAY = 3000;
   const END = FORWARD + HOLD + FORWARD;
   const STRIKE = 0.42; // the face breaks apart
   const FLASH = 2.3; // cyan flash inside the swirl
