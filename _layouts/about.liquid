@@ -17,7 +17,12 @@ layout: default
   <article>
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
+        {% if page.profile.transition %}
+          {% assign storm_poster = page.profile.image | prepend: 'assets/img/' %}
+          {% assign storm_alt = page.profile.image_hover | prepend: 'assets/img/' %}
+          {% assign storm_video = page.profile.transition | prepend: 'assets/video/' %}
+          {% include profile_storm.liquid video=storm_video poster=storm_poster alt=storm_alt %}
+        {% elsif page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle profile-img-hover' %}
