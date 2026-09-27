@@ -17,8 +17,9 @@ social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: false # a plain list, no scroll box
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: # blank = show every news item in the `_news` folder
+  visible: 5 # rows shown before the box scrolls; keeps the box the height it had with 5 items
 
 latest_posts:
   enabled: false
