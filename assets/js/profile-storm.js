@@ -11,12 +11,12 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   // The clip is forward shatter + hold + the same shatter reversed (24 fps source).
-  const FORWARD = 91 / 24;
+  const FORWARD = 109 / 24;
   const HOLD = 5; // baked into the clip
   const AUTOPLAY_DELAY = 3000;
   const END = FORWARD + HOLD + FORWARD;
   const STRIKE = 0.42; // the face breaks apart
-  const FLASH = 2.3; // cyan flash inside the swirl
+  const FLASH = 2.4; // brightest cyan flash inside the vortex
   const cues = [
     { t: STRIKE, run: () => burst() },
     { t: FLASH, run: () => strikeArcs(2, 0.7) },
@@ -186,7 +186,9 @@
   }
 
   function step(dt, now) {
-    if (!reduceMotion.matches && state === "idle") {
+    // The resting photo and the held second photo both get the idle sparks.
+    const holding = state === "playing" && video.currentTime > FORWARD + 0.3 && video.currentTime < FORWARD + HOLD;
+    if (!reduceMotion.matches && (state === "idle" || holding)) {
       if (Math.random() < dt * 7) spawnShard(edgePoint(), rand(6, 20), rand(1.4, 2.8), rand(1.8, 4.2));
       if (now >= nextArcAt) {
         spawnArc(1);
