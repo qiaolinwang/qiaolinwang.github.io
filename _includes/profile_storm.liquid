@@ -1,0 +1,78 @@
+<style>
+  .storm-figure {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    margin-bottom: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  .storm-figure video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .storm-figure canvas {
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+  }
+  .storm-figure:focus-visible {
+    box-shadow: 0 0 0 3px var(--global-theme-color);
+  }
+  .storm-sound-hint {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    z-index: 4;
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: rgba(8, 16, 40, 0.6);
+    color: #dff3ff;
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .storm-figure.is-muted .storm-sound-hint {
+    opacity: 1;
+  }
+  .storm-figure .storm-still {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+  .storm-figure.is-alt .storm-still {
+    opacity: 1;
+  }
+</style>
+<div
+  class="storm-figure"
+  role="button"
+  tabindex="0"
+  aria-label="{{ site.first_name }} {{ site.last_name }}: play the photo transition with sound"
+  data-alt="{{ include.alt | relative_url }}"
+>
+  <video
+    class="z-depth-1 rounded"
+    src="{{ include.video | relative_url }}"
+    poster="{{ include.poster | relative_url }}"
+    preload="auto"
+    playsinline
+    disablepictureinpicture
+    disableremoteplayback
+    aria-hidden="true"
+  ></video>
+  <canvas aria-hidden="true"></canvas>
+  <span class="storm-sound-hint" aria-hidden="true">&#9835; click for sound</span>
+</div>
+<script defer src="{{ '/assets/js/profile-storm.js' | relative_url | bust_file_cache }}"></script>
+<!-- The sound wave beside the motto (a canvas in about.md's subtitle) follows this clip's audio. -->
+<script defer src="{{ '/assets/js/motto-wave.js' | relative_url | bust_file_cache }}"></script>
