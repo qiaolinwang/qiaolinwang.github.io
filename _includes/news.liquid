@@ -28,6 +28,26 @@
         {% endfor %}
       </table>
     </div>
+    {% if include.limit and page.announcements.visible %}
+      <script>
+        // Size the box to the first N rows (never taller than the 60vw cap) so older news scrolls inside it.
+        (function () {
+          const box = document.currentScript.previousElementSibling;
+          const table = box.querySelector("table");
+          const rows = table.rows;
+          const n = {{ page.announcements.visible }};
+          function fit() {
+            if (rows.length <= n) return;
+            const last = rows[n - 1];
+            const h = last.offsetTop + last.offsetHeight + parseFloat(getComputedStyle(table).marginBottom);
+            box.style.maxHeight = `min(60vw, ${h}px)`;
+          }
+          fit();
+          window.addEventListener("resize", fit);
+          if (document.fonts) document.fonts.ready.then(fit);
+        })();
+      </script>
+    {% endif %}
   {% else %}
     <p>No news so far...</p>
   {% endif %}
